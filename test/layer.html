@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../assets/vendors/jquery/jquery.js"></script>
+    <script src="../assets/vendors/layer/layer.js"></script>
+</head>
+<body>
+    <script>
+    layer.ready(function() {
+        layer.open({
+            type: 2,
+            area: ['800px','500px'],
+            title: '欢迎页',
+            // time: 2000,
+            content: 'http://baidu.com',
+            end: function () {
+                console.log('关闭弹出层');
+            }
+        });
+    });
+    </script>
+    
+</body>
+</html>

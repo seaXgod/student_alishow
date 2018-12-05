@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/vendors/editor/themes/default/css/umeditor.css">
+    <script src="/assets/vendors/editor/third-party/jquery.min.js"></script>
+    <script charset="utf-8" src="/assets/vendors/editor/umeditor.config.js"></script>
+    <script charset="utf-8" src="/assets/vendors/editor/umeditor.min.js"></script>
+    <script src="/assets/vendors/editor/lang/zh-cn/zh-cn.js"></script>
+</head>
+<body>
+    <textarea id="content"></textarea>
+    <script>
+        var um  = UM.getEditor('content',{
+            initialFrameWidth: 1000,
+            initialFrameHeight: 500,
+            isShow: true,
+            fontsize:[10,12,14,16,18,20],
+        });
+    </script>
+</body>
+</html>
